@@ -1,0 +1,27 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+.App {
+  padding-bottom: 0px;
+  height:100%;
+  min-height: 100vh;
+  /* ff 3.6+ */
+  background:-moz-radial-gradient(ellipse at 50% 50%, rgba(252, 252, 252, 1) 0%, rgba(152, 151, 152, 1) 100%);
+
+  /* safari 5.1+,chrome 10+ */
+  background:-webkit-radial-gradient(ellipse at 50% 50%, rgba(252, 252, 252, 1) 0%, rgba(152, 151, 152, 1) 100%);
+
+  /* opera 11.10+ */
+  background:-o-radial-gradient(ellipse at 50% 50%, rgba(252, 252, 252, 1) 0%, rgba(152, 151, 152, 1) 100%);
+
+  /* ie 10+ */
+  background:-ms-radial-gradient(ellipse at 50% 50%, rgba(252, 252, 252, 1) 0%, rgba(152, 151, 152, 1) 100%);
+
+  /* global 92%+ browsers support */
+  background:radial-gradient(ellipse at 50% 50%, rgba(252, 252, 252, 1) 0%, rgba(152, 151, 152, 1) 100%);
+  background-attachment: fixed;
+
+}
