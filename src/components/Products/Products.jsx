@@ -49,7 +49,7 @@ const Products = () => {
       id: 2,
       title: 'bag 2',
       primaryImage: bag2,
-      secondaryImages: [bag2, bag2_1, bag2_2, bag1_3, bag2_4],
+      secondaryImages: [bag2, bag2_1, bag2_2, bag2_3, bag2_4],
       cost: "$150.00"
     },
     {
@@ -111,10 +111,10 @@ const Products = () => {
         <div className="row justify-content-center">
           {products.map((product, i) => {
             return (
-              <div className="col-3 mb-5 mx-5 py-2 border border-dark" key={product.id} >
+              <div className="col-md-3 mb-5 mx-5 py-2 border border-dark" key={product.id} >
                 <div className="text-center">
-                  <img className="card-img-top" style={{ width: "15.625rem" }} src={product.primaryImage} alt="Card image cap" />
                   <div className="card-body">
+                  <img className="card-img-top img-fluid" src={product.primaryImage} alt="Card image cap" />
                     <h5 className="card-title">{product.title}</h5>
                     <p className="card-text">cost: {product.cost}</p>
                   </div>

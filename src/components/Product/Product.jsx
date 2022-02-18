@@ -8,25 +8,25 @@ const Product = (props) => {
 
     console.log('image', image);
     console.log(product)
-    
+    // console.log(window.innerWidth)
     return (
         <div>
             <div className="container mt-5 d-flex flex-wrap">
                 <Link to="/products"><button className="btn btn-secondary mb-3">Back to Products</button></Link>
                 <div className="row">
-                    <div className="col-6">
-                        <img style={{ width: "100%" }} src={image} alt={product.img} />
-                        <div className="d-flex flex-row" key={product.id}> 
+                    <div className="col-sm-6">
+                        <img className="img-fluid" src={image} alt={product.img} />
+                        <div className="d-flex flex-row flex-wrap flex-start my-2" key={product.id}> 
                             {product.secondaryImages.map((img, i) => {
                                 return (
-                                        <div className="mx-2 mt-2">
-                                            <img style={{ width: "5rem" }} src={img} onClick={() => setImage(img)} />
+                                        <div className="col-2 mx-1 mt-1">
+                                            <img className="img-fluid" src={img} onClick={() => setImage(img)} />
                                         </div>               
                                 )
                             })}
                         </div>
                     </div>
-                    <div className="col-6">
+                    <div className="col-sm-6 mt-3">
                         <h1>{product.title}</h1>
                         <hr></hr>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed unde maxime consectetur corrupti at quia. Recusandae illum quae eveniet, voluptates aperiam fugit commodi veniam beatae saepe quidem? Placeat, id similique!</p>
